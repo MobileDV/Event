@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rlybar"
+        android:layout_height="50dp"
+        android:background="@color/topbar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:textStyle="normal|bold"
+            android:text="Add Event" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/backbutton"
+            android:id="@+id/imgup_back"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlybar">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/licontain"
+
+            android:layout_marginTop="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/contact_title"
+                    android:layout_marginLeft="30dp"
+                    android:hint="Event title "
+                    android:textColor="@android:color/darker_gray"
+                    android:textStyle="normal|bold" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="1dp"></LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/contact_description"
+                    android:layout_marginLeft="30dp"
+                    android:hint="Event description "
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerVertical="false" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="1dp"></LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/contact_date"
+                    android:layout_marginLeft="30dp"
+                    android:hint="date " />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="1dp"></LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/contact_place"
+                    android:layout_marginLeft="30dp"
+                    android:hint="City, Street, Zip" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="1dp"></LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/contact_person"
+                    android:layout_marginLeft="30dp"
+                    android:hint="Person/Organization" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="1dp"></LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/contact_category"
+                    android:layout_marginLeft="30dp"
+                    android:hint="Category" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="1dp"></LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:text="Upload"
+            android:layout_height="40dp"
+            android:id="@+id/btn_uplod"
+            android:background="@drawable/round_border_2"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/background_dark"
+            android:layout_width="100dp"
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:textStyle="normal|bold"
+            style="?android:attr/windowAnimationStyle" />
+
+    </RelativeLayout>
+</RelativeLayout>

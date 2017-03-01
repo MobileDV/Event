@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rlytop"
+        android:background="@color/button">
+
+        <TextView
+            android:text="Events"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textStyle="normal|bold"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/backbutton"
+            android:id="@+id/imgmainBack"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rlysearch"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@+id/rlytop">
+
+        <Button
+            android:text="Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnFilter"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_border_2"
+            android:textSize="20dp"
+            android:textStyle="normal|bold|italic"
+            android:textColorHighlight="@color/white"
+            style="?android:attr/windowAnimationStyle"
+            android:fontFamily="cursive"
+            android:textAllCaps="false"
+            android:textAlignment="center" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="110dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/search_zip"
+            android:hint="Filter Zip / Place"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_border_1"
+            android:paddingLeft="20dp">
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:paddingLeft="20dp"
+            android:layout_marginRight="110dp"
+            android:id="@+id/search_category"
+            android:layout_marginTop="5dp"
+            android:hint="Filter Category"
+            android:layout_below="@+id/search_zip"
+            android:background="@drawable/round_border_1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rlyadd"
+        android:layout_below="@+id/rlysearch"
+        android:background="@color/topbar">
+
+        <Button
+            android:text="Add new events"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_add_data"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:textStyle="normal|italic" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true">
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sc_eventslist"
+        android:layout_below="@+id/rlyadd">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/listview" />
+    </ScrollView>
+</RelativeLayout>
